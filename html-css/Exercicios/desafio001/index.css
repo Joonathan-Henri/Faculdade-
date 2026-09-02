@@ -1,0 +1,133 @@
+body{
+ background: linear-gradient(135deg, #0a0e2a 0%, #1a1a4e 40%, #4a2a7a 100%);
+  font-family: monospace;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.container-geral {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza blocos */
+}
+.menu {
+  display: flex;
+  padding: 10px;
+  margin: 0;
+  gap: 50px;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+  background: transparent;
+}
+.menu li:first-child{
+  margin-right: auto;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu a:visited {
+  color: #fff;
+}
+
+.menu a:hover {
+  color: rgb(180, 180, 180);
+}
+.habilidades{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+  }
+  .img{
+    width: 50px;
+    height: 50px;
+  }
+
+ul{
+  list-style: none;
+}
+.habilidades{
+  display: flex;
+  gap: 20px;
+}
+
+.container-habilidades{
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.habilidades{ 
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 50px;
+  margin-top:10px;
+  width: 70px;
+  height: 70px;
+}
+.projetos{
+  display: flex;
+  gap: 20px;
+}
+.container-projetos {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; /* quebra linha se não couber */
+}                      
+.projetos{
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top:10px;
+  width: 250px;
+}
+.pasta {
+  width: 50px;
+  display: flex;
+}
+.eu {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+  padding: 5px;
+
+  background: linear-gradient(
+    45deg,
+    #021B4E,
+    #112D78,
+    #4B2E83,
+    #6B46C1
+  );
+
+  object-fit: cover;
+}
+.footer{
+ padding: 40px 20px;
+ text-align: center;
+}
+.footer h2{
+  margin-bottom: 20px;
+  
+}
+.footer-links{
+  color:white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0 auto;
+}
+.footer-links a {
+  color: #fff;
+ 
+}
+.footer-links a:hover{
+  color: rgb(180, 180, 180);
+}

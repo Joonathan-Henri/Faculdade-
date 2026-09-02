@@ -1,0 +1,23 @@
+.nav{
+
+    background-color: white;
+}
+
+.head{
+    background-color: aliceblue;
+}
+body{
+
+    background-color: black;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.principal{
+
+    font-family:arial;
+    color: yellowgreen;
+    text-align: center;
+    
+}
