@@ -718,54 +718,108 @@ main .sobre {
     }
 }
 
-.projects{
-    padding: 30px;
-    display: grid;
-    justify-content: center;
-    gap: 30px;
-    background-color: #151515;
+/* CONTATO */
+
+.contato{
+    padding: 60px 30px;
+    background-color: var(--fundo-secundario);
 }
 
-.projects ul{
+.contato_botoes{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
-}
-
-.projects_models ul li{
-    cursor: pointer;
-    font-family: 'Poppins';
-    background-color: #222;
-    border: 1px solid #333;
-    padding: 6px 20px;
-    color: #707070;
-}
-
-.projects_armazenamento ul{
-    display:grid;
-    margin-top: 60px;
     gap: 20px;
+    margin-bottom: 40px;
+}
+
+.contato_botoes a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    transition: .3s;
+}
+
+.botao_principal{
+    background-color: var(--cor-destaque);
+    border: 2px solid var(--cor-destaque);
+    color: var(--texto-claro);
+}
+
+.botao_secundario{
+    border: 2px solid var(--texto-claro);
+    color: var(--texto-claro);
+}
+
+.contato_botoes a:hover{
+    background-color: var(--texto-claro);
+    border-color: var(--texto-claro);
+    color: var(--fundo-principal);
+}
+
+.contato_lista{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
-.projects_armazenamento ul li{
-    max-width: 100%;
-    height: 100%;
-}
-
-.projects_armazenamento ul li img{
-    max-width: 100%;
-    height: 100%;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.projects a {
-    background-color: #222;
-    text-decoration: none;
-    justify-self: center;
-    padding: 20px 40px;
+.contato_lista li{
+    background-color: var(--fundo-item);
     border: 1px solid #333;
-    color: #707070
+    border-radius: 6px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: .3s;
+}
+
+.contato_lista li:hover{
+    border-color: var(--cor-destaque);
+}
+
+.contato_lista i{
+    color: var(--cor-destaque);
+    font-size: 1.5rem;
+}
+
+.contato_lista a,
+.contato_lista span{
+    color: var(--texto-claro);
+    font-family: 'Poppins';
+}
+
+/* RODAPÉ */
+
+footer{
+    background-color: var(--fundo-principal);
+    border-top: 1px solid #222;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+footer p,
+footer a{
+    color: var(--texto-cinza);
+    font-family: 'Poppins';
+    font-size: .9rem;
+}
+
+footer a:hover{
+    color: var(--cor-destaque);
+}
+
+@media (max-width: 600px){
+    footer{
+        justify-content: center;
+        text-align: center;
+    }
 }
